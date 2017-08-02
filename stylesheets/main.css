@@ -1,0 +1,211 @@
+#core-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: fixed;
+  right: 1em;
+}
+
+.navigator {
+  padding: 0.15em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  background-color: rgba(31, 37, 40, 0.9);
+  color: rgba(252, 81, 48, 1);
+  border-bottom: 2px solid rgba(252, 81, 48, 0.8);
+}
+
+.navigator:hover {
+  color: rgb(31, 37, 40);
+  background-color: rgb(252, 81, 48);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#home-main {
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../assets/MountainsNoir.jpg');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#center-bar {
+  width: 100vw;
+  height: 10em;
+  background-color: rgba(31, 37, 40, 0.9);
+  color: rgb(237, 237, 237);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#main-name {
+  margin-left: 0.5em;
+}
+
+.splash-red {
+  color: rgb(252, 81, 48);
+}
+
+#icon-holder {
+  margin-left: 20em;
+}
+
+.nav-icon {
+  padding: 1em;
+  border-radius: 20%;
+  background-color: rgba(237, 237, 237, 0.8);
+  width: 6em;
+  margin-left: 2em;
+}
+
+.nav-icon:hover {
+  background-color: rgb(252, 81, 48);
+}
+
+#about-main {
+  background-position: center;
+  background-size: cover;
+  background-image: url('../assets/meMountains.jpg');
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 10em;
+}
+
+#about-center {
+  width: 100vw;
+  height: auto;
+  background-color: rgba(31, 37, 40, 0.9);
+  background-attachment: fixed;
+  color: rgb(237, 237, 237);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em;
+  height: auto;
+}
+
+.info-panel {
+  height: auto;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(31, 37, 40, 0.9);
+  width: 100vw;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding: 1em;
+}
+
+.info-title {
+  text-align: center;
+  color: rgb(39, 206, 250);
+}
+
+.info-text {
+  font-size: 1.2em;
+  color: rgb(237, 237, 237);
+  word-wrap: break-word;
+  width: 60em;
+}
+
+.info-img {
+  width: 25em;
+  height: 18em;
+  float: right;
+  margin-right: 2em;
+
+}
+
+#portrait {
+  width: 15em;
+  height: 20em;
+  margin-left: 3em;
+}
+
+#travels-main {
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../assets/planeWing.jpg');
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 10em;
+}
+
+#travels-center {
+  width: 100vw;
+  height: auto;
+  background-color: rgba(31, 37, 40, 0.9);
+  color: rgb(237, 237, 237);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em;
+  height: auto;
+}
+
+#small-map {
+  width: 30em;
+  height: auto;
+}
+
+.flag-panel {
+  height: auto;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(31, 37, 40, 0.9);
+  width: 100vw;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding: 2em;
+}
+
+#description-panel {
+  width: 40em;
+  font-size: 1.2em;
+  color: rgb(237, 237, 237);
+  word-wrap: break-word;
+}
+
+#big-flag {
+  height: 20em;
+  width: 30em;
+  /*border-radius: 60%;*/
+  margin-left: -20em;
+}
+
+.small-flag {
+  width: 15em;
+  height: 9em;
+}
+
+.flag-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30em;
+  height: auto;
+  margin: 0px;
+}
+
+.small-flag {
+  margin-top: 1em;
+}

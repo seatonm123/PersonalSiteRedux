@@ -1,0 +1,8 @@
+<nav ng-mouseleave="$ctrl.navShown = false" id="core-nav">
+  <a href="#"><h3 class="panel-primary navigator" ng-mouseover="$ctrl.showNav()" ng-show="!$ctrl.navShown" id="nav-mouse">Navigation</h3></a>
+  <a href="#" ng-show="$ctrl.navShown"><h3 class="panel-primary navigator" ng-click="$ctrl.goState('home')">Home</h3></a>
+  <a href="#" ng-show="$ctrl.navShown"><h3 class="panel-primary navigator" ng-click="$ctrl.goState('about')">About</h3></a>
+  <a href="#" ng-show="$ctrl.navShown"><h3 class="panel-primary navigator" ng-click="$ctrl.goState('travels')">Travels</h3></a>
+  <a href="#" ng-show="$ctrl.navShown"><h3 class="panel-primary navigator" ng-click="$ctrl.goState('projects')">Projects</h3></a>
+  <a href="#" ng-show="$ctrl.navShown"><h3 class="panel-primary navigator" ng-click="$ctrl.goState('contact')">Contact</h4></a>
+</nav>
