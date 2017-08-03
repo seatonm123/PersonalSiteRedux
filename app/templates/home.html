@@ -1,11 +1,31 @@
 <div id="home-main">
-  <div id="center-bar">
+  <div class="center-bar">
     <h2 id="main-name">Matt Seaton |<span class="splash-red">| Web Developer |</span>| Denver, CO</h2>
     <div id="icon-holder">
-      <a href="#" ng-click="$ctrl.goState('about')"><img src="../../assets/about.png" class="nav-icon" /></a>
-      <a href="#" ng-click="$ctrl.goState('travels')"><img src="../../assets/travels.png" class="nav-icon" /></a>
-      <a href="#"><img src="../../assets/Projects.png" class="nav-icon" /></a>
-      <a href="#"><img src="../../assets/contact.png" class="nav-icon" /></a>
+      <div class="icon-label-box">
+        <a href="#" ng-click="$ctrl.goState('about')" ng-mouseover="$ctrl.aboutShown = true" ng-mouseleave="$ctrl.aboutShown = false" name="about">
+          <img src="../../assets/about.png" class="nav-icon" />
+        </a>
+        <label for="about" ng-show="$ctrl.aboutShown">About</label>
+      </div>
+      <div class="icon-label-box">
+        <a href="#" ng-click="$ctrl.goState('travels')" ng-mouseover="$ctrl.travelsShown = true" ng-mouseleave="$ctrl.travelsShown = false" name="travels">
+          <img src="../../assets/travels.png" class="nav-icon" />
+        </a>
+        <label for="travels" ng-show="$ctrl.travelsShown">Travels</label>
+      </div>
+      <div class="icon-label-box">
+        <a href="#" ng-click="$ctrl.goState('projects')" ng-mouseover="$ctrl.projectsShown = true" ng-mouseleave="$ctrl.projectsShown = false" name="projects">
+          <img src="../../assets/projects.png" class="nav-icon" />
+        </a>
+        <label for="projects" ng-show="$ctrl.projectsShown">Projects</label>
+      </div>
+      <div class="icon-label-box">
+        <a href="#" ng-click="$ctrl.goState('contact')" ng-mouseover="$ctrl.contactShown = true" ng-mouseleave="$ctrl.contactShown = false">
+          <img src="../../assets/contact.png" class="nav-icon" />
+        </a>
+        <label for="contact" ng-show="$ctrl.contactShown">Contact</label>
+      </div>
     </div>
   </div>
 </div>

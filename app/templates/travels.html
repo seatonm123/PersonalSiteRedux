@@ -2,11 +2,11 @@
   <div id="travels-center">
     <div class="text-box">
       <h3>"It's a funny thing about coming home: looks the same, smells<br /> the same, feels the same. Your realize what's changed is you."</h3>
-      <h4 class="splash-red">F. Scott Fitzgerald</h4>
+      <h4 class="splash-blue">F. Scott Fitzgerald</h4>
     </div>
     <img id="small-map" src="../assets/pixelMap.png"/>
   </div>
-  <div class="flag-panel" >
+  <div class="flag-panel" id="small-large">
     <div class="text-box">
       <h2 class="splash-red">{{$ctrl.bigTitle}}</h2>
       <p id="description-panel">
@@ -16,20 +16,8 @@
     <img src="{{$ctrl.bigFlag}}" id="big-flag" ng-mouseover="$ctrl.MouseOver()" ng-mouseleave="$ctrl.MouseLeave()"/>
   </div>
   <div class="flag-panel">
-    <div class="flag-column">
-      <img ng-repeat="flag in $ctrl.flagArrayOne" class="small-flag" src={{flag.url}} name={{flag.country}} altSrc={{flag.altSrc}} ng-click="$ctrl.setBig($event)"/>
-    </div>
-    <div class="flag-column">
-      <img ng-repeat="flag in $ctrl.flagArrayTwo" class="small-flag" src={{flag.url}} name={{flag.country}} altSrc={{flag.altSrc}} ng-click="$ctrl.setBig($event)"/>
-    </div>
-    <div class="flag-column">
-      <img ng-repeat="flag in $ctrl.flagArrayThree" class="small-flag" src={{flag.url}} name={{flag.country}} altSrc={{flag.altSrc}} ng-click="$ctrl.setBig($event)"/>
-    </div>
-    <div class="flag-column">
-      <img ng-repeat="flag in $ctrl.flagArrayFour" class="small-flag" src={{flag.url}} name={{flag.country}} altSrc={{flag.altSrc}} ng-click="$ctrl.setBig($event)"/>
+    <div class="container-fluid flag-column">
+      <img ng-repeat="flag in $ctrl.flagArray" class="small-flag" src={{flag.url}} name={{flag.country}} altSrc={{flag.altSrc}} ng-click="$ctrl.setBig($event)" />
     </div>
   </div>
-  </div>
-
-
 </div>

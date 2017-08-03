@@ -36,7 +36,7 @@ a:hover {
   align-items: flex-start;
 }
 
-#center-bar {
+.center-bar {
   width: 100vw;
   height: 10em;
   background-color: rgba(31, 37, 40, 0.9);
@@ -56,6 +56,9 @@ a:hover {
 
 #icon-holder {
   margin-left: 20em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .nav-icon {
@@ -63,7 +66,8 @@ a:hover {
   border-radius: 20%;
   background-color: rgba(237, 237, 237, 0.8);
   width: 6em;
-  margin-left: 2em;
+  margin-right: 1em;
+  margin-left: 1em;
 }
 
 .nav-icon:hover {
@@ -80,6 +84,8 @@ a:hover {
   justify-content: space-around;
   align-items: flex-start;
   padding-top: 10em;
+  height: auto;
+  width: auto;
 }
 
 #about-center {
@@ -101,6 +107,8 @@ a:hover {
   margin-top: 2em;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgba(31, 37, 40, 0.9);
   width: 100vw;
   padding-left: 1em;
@@ -117,12 +125,12 @@ a:hover {
   font-size: 1.2em;
   color: rgb(237, 237, 237);
   word-wrap: break-word;
-  width: 60em;
+  width: 40em;
 }
 
 .info-img {
   width: 25em;
-  height: 18em;
+  height: auto;
   float: right;
   margin-right: 2em;
 
@@ -158,54 +166,168 @@ a:hover {
   justify-content: space-around;
   padding: 1em;
   height: auto;
+  margin-bottom: 5em;
 }
 
 #small-map {
-  width: 30em;
+  width: 20em;
   height: auto;
 }
 
 .flag-panel {
   height: auto;
-  margin-top: 2em;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: rgba(31, 37, 40, 0.9);
   width: 100vw;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding: 2em;
+  padding: 1em;
 }
 
 #description-panel {
-  width: 40em;
+  width: 30em;
   font-size: 1.2em;
   color: rgb(237, 237, 237);
   word-wrap: break-word;
 }
 
 #big-flag {
-  height: 20em;
-  width: 30em;
-  /*border-radius: 60%;*/
+  object-fit: cover;
+  height: 18em;
+  width: 27em;
   margin-left: -20em;
 }
 
-.small-flag {
-  width: 15em;
-  height: 9em;
+#small-large {
+  justify-content: space-around;
 }
 
-.flag-column {
+#small-large-text {
+  width: 30em;
+}
+
+.small-flag {
+  object-fit: cover;
+  width: 5em;
+  height: 5em;
+  border-radius: 20%;
+  margin: 0.7em;
+}
+
+.flag-row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: space-between;
   width: 30em;
   height: auto;
   margin: 0px;
 }
 
-.small-flag {
-  margin-top: 1em;
+#contact-main {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../assets/roscoeNoir.jpg');
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#contact-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.icon-label-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-nav-icon {
+  margin: 0px;
+  padding: 1em;
+  border-radius: 20%;
+  background-color: rgba(237, 237, 237, 0.8);
+  width: 6em;
+}
+
+.contact-nav-icon:hover {
+  background-color: rgb(252, 81, 48);
+}
+
+label {
+  text-align: center;
+  color: rgb(252, 81, 48);
+}
+
+#projects-main {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../assets/lakeMono.jpg');
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.splash-blue {
+  color: rgb(39, 206, 250);
+}
+
+.project-img {
+  height: 20em;
+  width: auto;
+}
+
+.project-text-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-text {
+  text-align: left;
+  font-size: 1.2em;
+  color: rgb(237, 237, 237);
+}
+
+#project-directions {
+  margin-top: 0em;
+  padding: 0.5em;
+  width: 100vw;
+  background-color: rgba(31, 37, 40, 0.9);
+  color: rgb(252, 81, 48);
+  text-align: center;
+}
+
+.project-text-container {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  max-width: 50vw;
+  overflow: scroll;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.project-info-panel {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(31, 37, 40, 0.9);
+  width: 100vw;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding: 1em;
 }
